@@ -1,0 +1,82 @@
+.section_advantages{
+  padding: 165px 0 190px;
+  color: #FFF;
+  font-weight: 600;
+  overflow: hidden;
+  @media (max-width: 1024px) {
+    padding-top: 72px;
+  }
+  &-p-0{
+    @media (max-width: 1024px) {
+      padding: 0;
+    }
+  }
+  &_wrapper {
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(213deg, #323E51 4.9%, #1D2532 55.16%);
+    padding: 130px 0 130px;
+    z-index: 0;
+    @media (max-width: 1024px) {
+      padding-top: 37px;
+    }
+    h2 {
+      font-size: 45px;
+      margin-bottom: 65px;
+      @media (max-width: 1024px) {
+        font-size: 8vw;
+        margin-bottom: 32px;
+      }
+    }
+  }
+  &_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 650px;
+    margin: auto;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      padding: 0 30px;
+      gap: 35px;
+
+    }
+  }
+  &_card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px 47px;
+    text-align: center;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 131.579% */
+    letter-spacing: -0.7px;
+    max-width: 300px;
+    @media (max-width: 1024px) {
+      margin: auto;
+      max-width: 260px;
+      font-size: 16px;
+    }
+    &_emoji{
+      margin-bottom: 23px;
+      max-width: 117px;
+    }
+    &_bg{
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      @media (max-width: 1024px) {
+        max-width: 260px;
+        max-height: 273px;
+      }
+    }
+  }
+}
